@@ -6,6 +6,9 @@ body {
   text-align: center;
   font-family: 'Poiret One', cursive;
 }
+body {
+    background-image:url(https://s-media-cache-ak0.pinimg.com/originals/92/4c/cc/924cccc759117824a312fa1a48494f10.png);
+}
 h1 {
   font-size:150px;
   font-family: 'Tangerine', cursive;
@@ -22,5 +25,5 @@ h3 {
   font-size:25px;
 }
 h5 {
-font-size: 25px;
+font-size:35px;
 }
