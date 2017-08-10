@@ -4,6 +4,85 @@
   <link rel="stylesheet" type="text">
   <title>
     Page Title </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: -40px;
+  width: auto;
+  padding: 230px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
 </head>
 <body>
 <h1> One Size Fits All
@@ -12,12 +91,67 @@
 <a href="fpmakeuppg.html"><p style="font-size:40px;display:inline;padding-right:50px;"> Make-Up     </p></a>
 <a href="fpshapepg.html"><p style="font-size:40px;display:inline;padding-right:50px;">Body Positivity    </p></a>
 <a href="fphuepg.html"><p style="font-size:40px;display:inline;padding-right:50px;">Hue   </p></a>
-<a href=""><p style="font-size:40px;display:inline;padding:20px;"> About Us </p></a>
+<a href="file:///C:/Users/gwc/Documents/finalproject/fpaboutuspg.html"><p style="font-size:40px;display:inline;padding:20px;"> About Us </p></a>
 <h3>
 One Size Fits All was created because we see a need to empower women and girls. We also wanted to discuss the issues we see in our catrgories.  Our first catagory is make-up there we discuss how make-up is okay, and issues we have with make-up in general and certain companies. Our next catagort is body positivity we wanted to show all body shapes and sizes are okay everone does't have to have the small waist and wide hips. Lastly  we call our last catagory the hue corner because we want to show that all skin shades are beautiful.
 </h3>
 <h4>
-<img src="home.jpg" style="width:1500px;height:700px">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div>
+<img src="home.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img src="16.jpg" style="width:100%; height:80%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img src="Skin-ft.png"style="width:100%; height:80%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
 </h4>
 <h5>
 </h5>
