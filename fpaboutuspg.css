@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Tangerine');
+body {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+}
+body {
+    background-image:url(https://s-media-cache-ak0.pinimg.com/originals/92/4c/cc/924cccc759117824a312fa1a48494f10.png);
+}
+h1 {
+  font-size:150px;
+  font-family: 'Tangerine', cursive;
+  text-shadow: 12px 15px grey;
+  margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+h6{
+  text-align: center;
+}
