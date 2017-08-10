@@ -16,9 +16,11 @@ text-align: center;
 }
 h3 {
   font-family: 'Lobster', cursive;
-font-size: 24;
-
-}
+font-size: 24;}
+h4{font-family: 'Lobster', cursive;
+font-size: 24}
+h5{font-family: 'Lobster', cursive;
+font-size: 24}
 #pic24{
   height:300px;
   width:400px;
